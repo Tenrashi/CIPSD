@@ -1,0 +1,6 @@
+extends layout
+
+block content
+	form(method='POST', action='/users/prenom?_method=PUT')
+		textarea#text.form-control(placeholder='Texte encore' name="text")
+		button(type='submit') Modify

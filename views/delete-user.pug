@@ -1,0 +1,6 @@
+extends layout
+
+block content
+	form(method='POST', action='/users/numero?_method=DELETE')
+		textarea#text.form-control(placeholder='Texte' name="numero")
+		button(type='submit') Delete
